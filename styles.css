@@ -47,10 +47,11 @@ html {
 img {
   max-width: 100%;
 }
-
+body {
+  background-color: #fff9db;
+}
 .content {
   /* background-color: #ffa94d; */
-  background-color: #fff9db;
   width: 100vw;
   min-height: 100vh;
   justify-content: center;
