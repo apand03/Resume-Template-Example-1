@@ -18,7 +18,7 @@ html {
 }
 .grid-2-cols {
   grid-template-columns: 20rem 1fr;
-  gap: 1rem;
+  gap: 3rem;
 }
 
 .title {
@@ -110,6 +110,136 @@ img {
   top: -60%;
   left: 1.5%;
 }
+
+/** About **/
+
+.about .title {
+  margin: 0 0 0.5rem 0;
+  color: #1971c2;
+}
+.about .grid-2-cols {
+  grid-template-columns: 1fr 1fr;
+}
+
+/** Work **/
+.work .company header {
+  padding: 0.5rem 0;
+}
+.company header .designation {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 0.5rem 0 0 0;
+}
+
+.company header .company-name {
+  font-weight: 600;
+  color: #478dce;
+  margin-bottom: 0.5rem;
+}
+
+.company header .description {
+  max-width: 30rem;
+  color: #665;
+}
+/** End of Work **/
+
+/** Education **/
+
+.education .title {
+  margin-top: 2rem;
+}
+
+.education h3.degree-name {
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 0.8rem;
+}
+
+.education .organisation-name {
+  font-size: 1.2rem;
+  color: #665;
+}
+
+span.timestamp {
+  font-weight: 700;
+}
+
+.marks {
+  display: block;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+  font-weight: 500;
+}
+
+.marks span {
+  font-weight: 700;
+}
+
+/** End of Education **/
+
+/** Skills **/
+
+.skills .title {
+  margin: 2.5rem 0 1rem 0;
+}
+
+.skill .skill-name {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #665;
+}
+
+.skill span {
+  display: block;
+  width: 70%;
+  height: 35%;
+  /* border: 1px solid #000; */
+  background-color: rgb(255, 255, 255);
+  position: relative;
+}
+
+.skill span::before {
+  content: "";
+  position: absolute;
+  width: 60%;
+  background-color: #1971c2;
+  height: 100%;
+}
+
+.skill-2 span::before,
+.skill-5 span::before {
+  width: 85%;
+}
+
+.skill-3 span::before,
+.skill-6 span::before {
+  width: 50%;
+}
+
+/** End of Skills **/
+
+/** Projects **/
+
+.projects .title {
+  margin: 4rem 0 1.5rem 0;
+}
+
+.projects .project-name {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.projects .description {
+  font-size: 1.1rem;
+  max-width: 30rem;
+  color: #665;
+}
+
+/** End of Projects **/
 
 @media (min-width: 768px) {
   .grid-2-cols {
